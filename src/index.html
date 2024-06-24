@@ -8,50 +8,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
+<body class="off">
     <header class="hero">
         <div class="container">
             <p class="hero__text">
-                Sunday 5pm <br> <span>2d 1h 50m 15s</span>
+                Sunday 5pm <br> <span id="contador"></span>
             </p>
-            <p>
-                Sunday evening deserves a soundtrack, don't miss the live broadcast.
+            <p class="subtitle">
+                Sunday evening deserves a soundtrack, so don't miss the live broadcast next Sunday.
             </p>
             <button type="button">Click here</button>
         </div>
     </header>
-    <section class="musicas hidden">
+    <section class="musicas">
+        <p class="musicas__title">A small spoiler of some of the artists</p>
         <div class="container">
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right">
                 <img class="image" src="/src/images/tame_impala2.jpg" alt="Tame Impala">
+                <p>Tame Impala</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "100">
                 <img class="image" src="/src/images/tv_girl2.jfif" alt="Tv Girl">
+                <p>TV Girl</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "200">
                 <img class="image" src="/src/images/mac_demarco2.jfif" alt="Mac DeMarco">
+                <p>Mac DeMarco</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "300">
                 <img class="image" src="/src/images/molchat_doma2.jpg" alt="Molchat Doma">
+                <p>Molchat Doma</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "400">
                 <img class="image" src="/src/images/current_joys.jfif" alt="Current Joys">
+                <p>Current Joys</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "500">
                 <img class="image" src="/src/images/hers.jfif" alt="Hers">
+                <p>Hers</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "600">
                 <img class="image" src="/src/images/strawberry_guy.jpg" alt="Strawberry Guy">
+                <p>Strawberry Guy</p>
             </div>
-            <div class="hidden">
+            
+            <div class="caixa" data-aos = "fade-right" data-aos-delay = "700">
                 <img class="image" src="/src/images/vacations.jfif" alt="Vacations">
+                <p>Vacations</p>
             </div>
-        </div>
-        <div>
-
         </div>
     </section>
+    <section class="info">
+        <div class="container" data-aos="fade-right">
+            <p class="container__text">
+                As the sun sets on a Sunday, sadness fills the air. A strange feeling that nothing is real, as if you are in a dream. Some songs seem to bring that same strange sensation. So stay tuned, every Sunday at 5pm.
+            </p>
+        </div>
+    </section>
+    <footer class="rodape">
+        <div class="container">
+            <p>© 2024 Luan Costa</p>
+            <a href="https://github.com/Luan-Macedo" target="_blank">
+                <img class="logo" src="/src/images/icons8-github-64.png" alt="Logo GitHub">
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

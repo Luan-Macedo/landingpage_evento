@@ -1,19 +1,51 @@
 .musicas{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    
+    display: grid;
+    text-align: center;
+    min-height: 100vh;
+    place-items: center;
+    align-items: center;
+
+    &__title{
+        padding-top: 50px;
+    }
 
     .container{
+        padding-top: 80px;
         display: flex;
         flex-wrap: wrap;
         text-align: center;
         justify-content: center;
         gap: 20px;
+
+        .image{
+            height: 200px;
+            margin: 5px;
+        }
     }
 }
 
-.image{
-    height: 200px;
-    margin: 5px;
-    cursor: pointer;
+.caixa{
+    display: inline-block;
+    position: relative;
+
+    p{
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        background-color: #fff;
+
+        
+    }
+
+    &:hover{
+
+        p{
+            background-color: #000;
+            color: #fff;
+        }
+        
+    }
 }
+
+
+

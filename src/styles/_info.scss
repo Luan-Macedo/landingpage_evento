@@ -1,0 +1,14 @@
+.info{
+    display: grid;
+    text-align: center;
+    min-height: 100vh;
+    place-items: center;
+    align-items: center;
+
+    .container{
+
+        &__text{
+            line-height: 30px;
+        }
+    }
+}

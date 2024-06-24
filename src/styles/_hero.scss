@@ -1,13 +1,19 @@
 .hero{
-    padding-top: 115px;
-    padding-bottom: 115px;
+    display: grid;
     text-align: center;
+    min-height: 100vh;
+    place-items: center;
+    align-items: center;
 
     &__text{
         margin-top: 64px;
         margin-bottom: 64px;
         font-size: 28px;
         line-height: 50px;
+    }
+
+    .subtitle{
+        line-height: 30px;
     }
 
     button{
