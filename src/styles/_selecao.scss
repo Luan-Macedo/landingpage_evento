@@ -1,0 +1,46 @@
+.selecao{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+
+    &__title{
+        font-size: 18px;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px 100px;
+        padding-top: 80px;
+
+        @media (max-width: 640px){
+            grid-template-columns: 1fr;
+        }
+
+        &__banda{
+            padding-bottom: 30px;
+        }
+    }
+
+    &__lista{
+        display: grid;
+        gap: 10px;
+        
+        &__item{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p{
+                font-size: 14px;
+            }
+        }
+
+        &__image{
+            height: 45px;
+        }
+    }
+}

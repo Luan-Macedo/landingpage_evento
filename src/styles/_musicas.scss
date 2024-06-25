@@ -4,9 +4,10 @@
     min-height: 100vh;
     place-items: center;
     align-items: center;
+    padding-top: 80px;
 
     &__title{
-        padding-top: 50px;
+        font-size: 18px;
     }
 
     .container{
@@ -33,15 +34,13 @@
         top: 5px;
         left: 5px;
         background-color: #fff;
-
-        
+        opacity: 0;
     }
 
     &:hover{
 
         p{
-            background-color: #000;
-            color: #fff;
+            opacity: 1;
         }
         
     }

@@ -1,13 +1,17 @@
 @use 'hero';
 @use 'musicas';
+@use 'selecao';
 @use 'info';
 @use 'footer';
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Mono", monospace;
+    text-decoration: none;
+    list-style: none;
 }
 
 .container{
