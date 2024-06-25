@@ -37,12 +37,16 @@
         opacity: 0;
     }
 
-    &:hover{
-
+    @media (max-width: 640px){
         p{
             opacity: 1;
         }
-        
+    }
+
+    &:hover{
+        p{
+            opacity: 1;
+        }
     }
 }
 
